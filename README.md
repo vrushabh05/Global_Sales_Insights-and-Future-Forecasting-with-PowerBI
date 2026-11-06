@@ -1,33 +1,45 @@
-# Global_Sales_Insights-and-Future-Forecasting-with-PowerBI
-This Power BI dashboard provides a comprehensive analysis of global sales performance, profit trends, and future sales forecasting. It helps businesses track key metrics, compare regional performance, and make data-driven decisions.
-# 🔍 Key Features
-✔ Sales & Profit Analysis – Breakdown by country, region, category, and sub-category.
-✔ Interactive Filters – Drill down by year, month, market, and segment.
-✔ Sales Forecasting – Predictive trends based on the last two years of data.
-✔ Geographical Insights – Sales distribution across regions (APAC, Europe, USCA, LATAM, Africa).
-✔ Shipment & Market Performance – Comparison of sales by shipping mode and market.
+# Global Sales Insights and Forecasting with Power BI
 
-# 📊 Dashboard Sections
-## 1️⃣ Global Sales Overview
-Sales by Sub-Category (Furniture, Technology, Office Supplies)
+A Power BI report on global sales and profit with forecasting, a decomposition tree and comparison views. It helps track key metrics, compare regions and spot trends.
 
-Sales by Region (East, Central, South, West, etc.)
+## Report structure
 
-Sales by Segment (Home, Corporate, Consumer)
+`Global Sales.pbix` has four pages (read directly from the file):
 
-Sales by Ship Mode (Standard Class, Second Class, First Class, Same Day)
+```mermaid
+flowchart LR
+    A[Global Sales<br/>18 visuals] --> B[Forecasting<br/>line chart]
+    B --> C[Decomposition<br/>decomposition tree]
+    C --> D[Comparison<br/>ribbon chart + treemap]
+```
 
-## 2️⃣ Profit & Country-wise Performance
-Top Profitable Countries: United States, China, India, Germany, France, etc.
+| Page | What it shows |
+|---|---|
+| Global Sales | KPI cards, bar charts, donut chart, map and slicers: sales and profit by country, region, category, sub-category, segment and ship mode |
+| Forecasting | Line-chart forecast of future sales, based on the last two years of data |
+| Decomposition | Decomposition tree for drilling into what drives sales |
+| Comparison | Ribbon chart and treemap |
 
-City-level Insights: Sales breakdown for Indian cities (Surat, Pune, Mumbai, etc.)
+## Highlights
 
-Category-wise Profit: Technology, Furniture, Office Supplies
+- Sales and profit broken down by country, region, category and sub-category
+- Interactive filters by year, month, market and segment
+- Geographic view across APAC, Europe, USCA, LATAM and Africa
+- Shipment-mode and market comparison
+- 6-month forecast window (Jul 2015 to Jan 2016)
 
-## 3️⃣ Sales Forecasting
-Next 6 Months Prediction (Jul 2015 – Jan 2016)
+## Files
 
-Trend analysis to anticipate future sales performance
+| File | Purpose |
+|---|---|
+| `Global Sales.pbix` | The main global sales report |
+| `sales insights(super_store).pbix` | Superstore sales report with forecasting and comparison pages (also in its own repository) |
+| `EDA on Walmart Sales Forecasting.ipynb` | Python EDA of the Superstore dataset (also in its own repository) |
 
-# 🛠 Technologies Used
-Power BI (DAX, Power Query, Custom Visuals)
+## Open it
+
+Install [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (Windows), download a `.pbix` file and open it.
+
+## Stack
+
+`Power BI` `DAX` `Power Query` `Python (EDA notebook)`
